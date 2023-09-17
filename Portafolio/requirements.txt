@@ -14,7 +14,6 @@ astroid==2.11.6
 asttokens==2.2.1
 async-timeout==4.0.2
 attrs==23.1.0
-autopep8 @ file:///opt/conda/conda-bld/autopep8_1650463822033/work
 backcall==0.2.0
 beautifulsoup4==4.11.1
 billiard==3.6.4.0
