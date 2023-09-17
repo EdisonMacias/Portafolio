@@ -1,13 +1,14 @@
 from django.db import models
 
 # Create your models here.
-class About (models.Model):
+class About(models.Model):
     Nom = models.CharField(max_length=100, verbose_name="Nombres")
     Apell = models.CharField(max_length=100, verbose_name="Apellidos")
     Tit = models.CharField(max_length=100, verbose_name="Titulo")
-    Espe = models.ImageField(verbose_name="Imagen", upload_to= "rooms")
-    NumPeople = models.IntegerField(verbose_name="Numero de Personas")
-    NumRoom = models.IntegerField(verbose_name="Numero de Habitaciones")
+    perfil = models.CharField(max_length=100, verbose_name="Perfil")
+    tel = models.CharField(max_length=100, verbose_name="Telefono")
+    email = models.CharField(max_length=100, verbose_name="Email")
+    Descrip = models.TextField(verbose_name="Descripcion")
     created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de Creacion")
     updated = models.DateTimeField(auto_now=True, verbose_name="Fecha de Modificacion")
 
@@ -17,3 +18,16 @@ class About (models.Model):
         ordering = ["-created"]
     def __str__(self):
         return self.Nom
+
+class Especialidad(models.Model):
+    Espe = models.CharField(max_length=100, verbose_name="Especialidad")
+    about = models.ManyToManyField(About)
+    created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de Creacion")
+    updated = models.DateTimeField(auto_now=True, verbose_name="Fecha de Modificacion")
+
+    class Meta:
+        verbose_name = 'Especialidad'
+        verbose_name_plural = 'Especialidades'
+        ordering = ["-created"]
+    def __str__(self):
+        return self.Espe
