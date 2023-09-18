@@ -1,0 +1,64 @@
+{% extends 'core/home.html' %}
+{% block class %}style="background-color: black;"{% endblock %}
+{% block link3 %}active{% endblock %}
+{% block content %}
+{% load static %}
+<section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Portafolio-Detalle
+            </h3>
+            <p class="subtitle-a">
+              Todos nuestros trabajos de calidad.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            {% for portfolio in portfolio %}
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="{{portfolio.img1.url}}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="{{portfolio.img2.url}}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="{{portfolio.img3.url}}" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Información del proyecto</h3>
+                <ul>
+                  <li><strong>Categoria</strong>: {{portfolio.tipo}}</li>
+                  <li><strong>Cliente</strong>: {{portfolio.cliente}}</li>
+                  <li><strong>Fecha del proyecto</strong>: {{portfolio.fecha}}</li>
+                  <li><strong>URL del proyecto</strong>: <a href="{{portfolio.url}}">{{portfolio.url}}</a></li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Detalle del proyecto</h2>
+                <p>
+                  {{portfolio.detall}}
+                </p>
+              </div>
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+      </section>
+    </div>
+</section>
+{% endblock%}

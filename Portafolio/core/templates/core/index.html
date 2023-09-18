@@ -8,16 +8,14 @@
     <div class="hero-content display-table">
         <div class="table-cell">
             <div class="container">
-                {% for about in about %}
                 <h1 class="hero-title mb-4">{{about.Nom}} {{about.Apell}}</h1>
                 <h3 class="hero-subtitle mb-4" style="color: white;">{{about.Tit}}</h3>
-                {% endfor %}
                 <p class="hero-subtitle"><span class="typed"
                     data-typed-items="
                     {% for espe in espe %}
-                    {{espe.Espe}}
-                    {% endfor %}
-                    "></span></p>
+                    {{espe.Espe}},
+                    {% endfor %}"
+                    ></span></p>
             </div>
         </div>
     </div>
@@ -35,15 +33,13 @@
                             <div class="row">
                                 <div class="col-sm-6 col-md-5">
                                     <div class="about-img">
-                                        <img src="{% static
-                                            'core/img/testimonial-2.jpg' %}"
+                                        <img src="{% static 'core/img/perfil.jpg' %}"
                                             class="img-fluid rounded b-shadow-a"
                                             alt="">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-7">
                                     <div class="about-info">
-                                        {% for about in about %}
                                         <p><span class="title-s">Nombre: </span>
                                             <span>{{about.Nom}} {{about.Apell}}</span></p>
                                         <p><span class="title-s">Perfil: </span>
@@ -52,37 +48,19 @@
                                             <span>{{about.email}}</span></p>
                                         <p><span class="title-s">Telefono:
                                             </span> <span>{{about.tel}}</span></p>
-                                        {% endfor %}
                                     </div>
                                 </div>
                             </div>
                             <div class="skill-mf">
                                 <p class="title-s">Habilidad</p>
-                                <span>HTML</span> <span class="pull-right">85%</span>
+                                {% for leng in leng %}
+                                <span>{{leng.Leng}}</span> <span class="pull-right">{{leng.porc}}%</span>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar"
-                                        style="width: 85%;" aria-valuenow="85"
+                                        style="width: {{leng.porc}}%;" aria-valuenow="85"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <span>CSS</span> <span class="pull-right">75%</span>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 75%" aria-valuenow="75"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>PYTHON</span> <span class="pull-right">90%</span>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 90%" aria-valuenow="50"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>JAVASCRIPT</span> <span
-                                    class="pull-right">90%</span>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 90%" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
+                                {% endfor %}
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -90,11 +68,9 @@
                                 <div class="title-box-2">
                                     <h5 class="title-left">Acerca de mi</h5>
                                 </div>
-                                {% for about in about %}
                                 <p class="">
                                     {{about.Descrip|linebreaksbr}}
                                 </p>
-                                {% endfor %}
                             </div>
                         </div>
                     </div>
