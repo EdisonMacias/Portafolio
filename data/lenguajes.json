@@ -1,0 +1,11 @@
+[
+  { "Leng": "Python", "porc": 90, "about_id": 1 },
+  { "Leng": "Java", "porc": 75, "about_id": 1 },
+  { "Leng": "HTML/CSS", "porc": 85, "about_id": 1 },
+  { "Leng": "SQL/PostgreSQL", "porc": 85, "about_id": 1 },
+  { "Leng": "JavaScript", "porc": 80, "about_id": 1 },
+  { "Leng": "TypeScript", "porc": 70, "about_id": 1 },
+  { "Leng": "Docker", "porc": 70, "about_id": 1 },
+  { "Leng": "React.js", "porc": 75, "about_id": 1 },
+  { "Leng": "Flask/Django", "porc": 80, "about_id": 1 }
+]

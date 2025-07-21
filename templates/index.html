@@ -1,0 +1,76 @@
+{% extends 'home.html' %}
+{% block class %}class="fixed-top"{% endblock %}
+{% block link1 %}active{% endblock %}
+
+{% block fond %}
+<div id="hero" class="hero route bg-image" style="background-image: url({{ url_for('static', filename='img/hero-bg.jpg') }});">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+        <div class="table-cell">
+            <div class="container">
+                <h1 class="hero-title mb-4">{{ about.Nom }} {{ about.Apell }}</h1>
+                <h3 class="hero-subtitle mb-4" style="color: white;">{{ about.Tit }}</h3>
+                <p class="hero-subtitle">
+                    <span class="typed" data-typed-items="{% for e in espe %}{{ e.Espe }}{% if not loop.last %}, {% endif %}{% endfor %}"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-shadow-full">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5">
+                                    <div class="about-img">
+                                        <img src="{{ url_for('static', filename=about.foto) }}"
+                                             class="img-fluid rounded b-shadow-a"
+                                             alt="Foto de perfil">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-7">
+                                    <div class="about-info">
+                                        <p><span class="title-s">Nombre: </span><span>{{ about.Nom }} {{ about.Apell }}</span></p>
+                                        <p><span class="title-s">Perfil: </span><span>{{ about.perfil }}</span></p>
+                                        <p><span class="title-s">Email: </span><span>{{ about.email }}</span></p>
+                                        <p><span class="title-s">Teléfono: </span><span>{{ about.tel }}</span></p>
+                                        <p><span class="title-s">Currículo: </span><span><a href="{{about.CV}}" target="_blank">Link</a></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-mf">
+                                <p class="title-s">Habilidad</p>
+                                {% for l in leng %}
+                                <span>{{ l.Leng }}</span> <span class="pull-right">{{ l.porc }}%</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar"
+                                         style="width: {{ l.porc }}%;" aria-valuenow="{{ l.porc }}"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-me pt-4 pt-md-0">
+                                <div class="title-box-2">
+                                    <h5 class="title-left">Acerca de mí</h5>
+                                </div>
+                                <p>
+                                    {{ about.Descrip | replace('\\n', '<br>') | safe }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

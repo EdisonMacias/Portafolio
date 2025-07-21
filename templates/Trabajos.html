@@ -1,0 +1,51 @@
+{% extends 'home.html' %}
+{% block class %}style="background-color: black;"{% endblock %}
+{% block link3 %}active{% endblock %}
+{% block content %}
+
+<section id="work" class="portfolio-mf sect-pt4 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">Portafolio</h3>
+          <p class="subtitle-a">Todos nuestros trabajos de calidad.</p>
+          <div class="line-mf"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% for p in portfolio %}
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="{{ url_for('trabajo_detalle', nombre=p.nom) }}">
+            <div class="work-img">
+              <img src="{{ url_for('static', filename=p.imgs[0]) }}" alt="" class="img-fluid">
+            </div>
+          </a>
+          <div class="work-content">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="w-title">{{ p.nom }}</h2>
+                <div class="w-more">
+                  <span class="w-ctegory">{{ p.tipo }}</span> /
+                  <span class="w-date">{{ p.fecha }}</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="w-like">
+                  <a href="{{ url_for('trabajo_detalle', nombre=p.nom) }}">
+                    <span class="bi bi-plus-circle"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "Nom": "Edisson Ariel",
+  "Apell": "Macias Cantos",
+  "Tit": "Ing. Sistemas de Información",
+  "perfil": "Desarrollador de Software",
+  "tel": "+593 996555676",
+  "email": "edisonmaciasc2025@gmail.com",
+  "Descrip": "Soy un Ingeniero en Sistemas de Información con experiencia en desarrollo de software, automatización de procesos, soporte técnico y gestión de bases de datos. He colaborado en el desarrollo de sistemas internos, aplicaciones web y soluciones enfocadas en la mejora de procesos organizacionales. Mi enfoque profesional se centra en la eficiencia tecnológica, el trabajo colaborativo y la creación de herramientas digitales que respondan a necesidades reales del entorno empresarial.<br>Durante mi trayectoria he trabajado con diversos lenguajes y frameworks como Flask, Django, React.js y PostgreSQL, integrando soluciones tanto para el frontend como el backend. También cuento con conocimientos prácticos en Angular, TypeScript, MongoDB y herramientas de virtualización como Docker. Me interesa la mejora continua de productos mediante metodologías ágiles como Scrum y la incorporación de principios DevOps en el ciclo de desarrollo.<br>Además de mis competencias técnicas, me destaco por mi compromiso con la calidad, la adaptabilidad frente a nuevos retos y una fuerte orientación al aprendizaje. Disfruto investigando nuevas tecnologías, optimizando procesos y aportando a proyectos que generen valor tangible. Mi objetivo profesional es seguir creciendo en entornos dinámicos, donde la tecnología sea un motor para la transformación y la innovación.",
+  "foto": "img/perfil.png",
+  "CV": "https://www.netlife.ec/trabaja-con-nosotros/"
+}

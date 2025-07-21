@@ -1,0 +1,47 @@
+{% extends 'home.html' %}
+{% block class %}style="background-color: black;"{% endblock %}
+{% block link5 %}active{% endblock %}
+{% block content %}
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 offset-md-2">
+        <div class="contact-mf">
+          <div id="contact" class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6 offset-md-3">
+                <div class="title-box-2 pt-4 pt-md-0">
+                  <h5 class="title-left">
+                    Contáctame 
+                  </h5>
+                </div>
+                {% for c in contacto %}
+                <div class="more-info">
+                  <p class="lead">
+                    ¡{{ c.msj }}
+                  </p>
+                  <ul class="list-ico">
+                    <li><span class="bi bi-geo-alt"></span> {{ c.drc }}</li>
+                    <li><span class="bi bi-phone"></span> {{ about.tel }}</li>
+                    <li><span class="bi bi-envelope"></span> {{ about.email }}</li>
+                  </ul>
+                </div>
+                <div class="socials">
+                  <ul>
+                    <li><a href="{{ c.fcb }}" target="_blank"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                    <li><a href="{{ c.itg }}" target="_blank"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                    <li><a href="{{ c.wsp }}" target="_blank"><span class="ico-circle"><i class="bi bi-whatsapp"></i></span></a></li>
+                  </ul>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

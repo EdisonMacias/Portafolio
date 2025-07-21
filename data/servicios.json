@@ -1,0 +1,32 @@
+[
+  {
+    "svc": "Desarrollo de Aplicaciones Web",
+    "dcpc": "Frontend y Backend moderno con frameworks como Flask, Django y React.",
+    "icon": "bi-laptop",
+    "about_id": 1
+  },
+  {
+    "svc": "Inteligencia Artificial",
+    "dcpc": "Proyectos con aprendizaje automático y modelos de visión por computadora (YOLO, etc).",
+    "icon": "bi-cpu",
+    "about_id": 1
+  },
+  {
+    "svc": "Automatización de procesos",
+    "dcpc": "Bots, scrapers y flujos automatizados con N8N.",
+    "icon": "bi-gear",
+    "about_id": 1
+  },
+  {
+    "svc": "Inteligencia Artificial",
+    "dcpc": "Proyectos con aprendizaje automático y modelos de visión por computadora (YOLO, etc).",
+    "icon": "bi-cpu",
+    "about_id": 1
+  },
+  {
+    "svc": "Automatización de procesos",
+    "dcpc": "Bots, scrapers y flujos automatizados con N8N.",
+    "icon": "bi-gear",
+    "about_id": 1
+  }
+]
