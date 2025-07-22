@@ -13,7 +13,7 @@ def home():
 @app.route('/servicios')
 def servicios():
     svc = get_servicios()
-    return render_template('servicios.html', svc=svc)
+    return render_template('servicio.html', svc=svc)
 
 @app.route('/trabajos')
 def trabajos():

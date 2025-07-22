@@ -7,5 +7,6 @@
   { "Leng": "TypeScript", "porc": 70, "about_id": 1 },
   { "Leng": "Docker", "porc": 70, "about_id": 1 },
   { "Leng": "React.js", "porc": 75, "about_id": 1 },
-  { "Leng": "Flask/Django", "porc": 80, "about_id": 1 }
+  { "Leng": "Flask/Django", "porc": 80, "about_id": 1 },
+  { "Leng": "Flutter", "porc": 88, "about_id": 1 }
 ]
