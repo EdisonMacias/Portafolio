@@ -16,17 +16,5 @@
     "dcpc": "Bots, scrapers y flujos automatizados con N8N.",
     "icon": "bi-gear",
     "about_id": 1
-  },
-  {
-    "svc": "Inteligencia Artificial",
-    "dcpc": "Proyectos con aprendizaje automático y modelos de visión por computadora (YOLO, etc).",
-    "icon": "bi-cpu",
-    "about_id": 1
-  },
-  {
-    "svc": "Automatización de procesos",
-    "dcpc": "Bots, scrapers y flujos automatizados con N8N.",
-    "icon": "bi-gear",
-    "about_id": 1
   }
 ]
