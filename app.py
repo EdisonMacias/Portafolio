@@ -10,10 +10,10 @@ def home():
     leng = get_lenguajes()
     return render_template('index.html', about=about, espe=espe, leng=leng)
 
-@app.route('/servicios')
+@app.route('/servicios') 
 def servicios():
     svc = get_servicios()
-    return render_template('servicio.html', svc=svc)
+    return render_template('servicio.html', svc=svc) 
 
 @app.route('/trabajos')
 def trabajos():
