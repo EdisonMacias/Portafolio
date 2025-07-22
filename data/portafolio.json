@@ -4,7 +4,7 @@
     "tipo": "Sistema Interno",
     "cliente": "Corp. Inversiones EC",
     "fecha": "2025-03-01",
-    "url": "https://github.com/EdisonMacias",
+    "url": "https://github.com/Luis-2102/Ecuaprest.git",
     "detall": "Desarrollo de sistema de gestión de préstamos con Flask y PostgreSQL, con simulador de pagos e historial de acciones.",
     "imgs":[
       "img/EP_1.png",
@@ -19,7 +19,7 @@
     "tipo": "Proyecto de Titulación",
     "cliente": "Universidad Técnica de Manabí",
     "fecha": "2025-01-10",
-    "url": "",
+    "url": "https://github.com/EdisonMacias/FarmIntel1.git",
     "detall": "App móvil para identificar Diatraea spp. usando visión por computadora y aprendizaje automático.",
     "imgs":[
       "img/FI_2.jpg",
@@ -34,7 +34,7 @@
     "tipo": "Sistema de Inventario",
     "cliente": "Universidad Técnica de Manabí",
     "fecha": "2023-06-14",
-    "url": "",
+    "url": "https://github.com/EdisonMacias/inventory.git",
     "detall": "Aplicación web de gestión de inventario que permite registrar, actualizar y consultar productos, proveedores y stock en tiempo real. Implementada con una interfaz amigable y funcionalidades de control de usuarios.",
     "imgs":[ 
       "img/Inve_1.png",
@@ -48,7 +48,7 @@
     "tipo": "Sistema de Reservacion de Habitaciones",
     "cliente": "Universidad Técnica de Manabí",
     "fecha": "2023-10-25",
-    "url": "",
+    "url": "https://github.com/EdisonMacias/TCLC.git",
     "detall": "Sistema de gestión de reservas para alojamientos académicos. Permite a los usuarios consultar disponibilidad, realizar reservas, y administrar datos de habitaciones, fechas y ocupantes, con reportes y panel administrativo.",
     "imgs":[ 
       "img/TCLC_1.png",
